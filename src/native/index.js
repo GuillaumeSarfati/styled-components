@@ -2,6 +2,7 @@
 
 /* eslint-disable import/no-unresolved */
 import reactNative from 'react-native'
+import StyleSheet from 'react-native-extended-stylesheet'
 
 import _InlineStyle from '../models/InlineStyle'
 import _StyledNativeComponent from '../models/StyledNativeComponent'
@@ -15,7 +16,7 @@ import isStyledComponent from '../utils/isStyledComponent'
 import type { Target } from '../types'
 
 const constructWithOptions = _constructWithOptions(css)
-const InlineStyle = _InlineStyle(reactNative.StyleSheet)
+const InlineStyle = _InlineStyle(StyleSheet)
 const StyledNativeComponent = _StyledNativeComponent(
   constructWithOptions,
   InlineStyle
